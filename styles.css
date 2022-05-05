@@ -6,9 +6,10 @@
     --blue: #31326f;
     --light-blue: #005490;
     --color-purple: #5d20be;
-    --color-pink: #c472d8;
+    --color-pink: #ca9fd6;
     --color-warning: rgb(216, 155, 85);
     --color-orange :#db6400;
+    --color-red :#a84667;
     --grey: #eee;
     --dark-grey: #222831;
     --dark-green: rgb(68, 177, 91);
@@ -41,4 +42,57 @@ img {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-body {
+    width: 640px;
+    border: 1px solid var(--dark-grey);
+    border-radius: 5px;
+    background-color: var(--color-pink);
+    color: var(--white);
+    text-align: center;
+}
+
+.container-body > * {
+    margin-bottom: 32px;
+}
+
+.app-title {
+    padding: 16px;
+    margin: 0 16px;
+}
+
+.count {
+    font-size: 32px;
+    padding: 16px;
+    margin: 0 16px;
+}
+
+.container-footer button {
+    padding: 16px;
+    margin: 0 16px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: var(--white);
+    /* font-weight: 700; */
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-subtract {
+    background-color: var(--color-red);
+}
+
+.btn-reset {
+    background-color: var(--white);
+    color: var(--black) !important;
+}
+
+.btn-add {
+    background-color: var(--dark-green);
 }
